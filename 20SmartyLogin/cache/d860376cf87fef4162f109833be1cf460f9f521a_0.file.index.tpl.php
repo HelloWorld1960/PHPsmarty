@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2019-08-20 22:02:25
+  from "C:\Users\Jorge01\WebPrograms\PHP[Smarty]\20SmartyLogin\estilos\templates\public\index.tpl" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5d5c51d183ca02_31952121',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'd860376cf87fef4162f109833be1cf460f9f521a' => 
+    array (
+      0 => 'C:\\Users\\Jorge01\\WebPrograms\\PHP[Smarty]\\20SmartyLogin\\estilos\\templates\\public\\index.tpl',
+      1 => 1566331343,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5d5c51d183ca02_31952121 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <html>
 
 <head>
@@ -6,7 +30,7 @@
 
 <body>
 	<style type="text/css">
-	{literal}
+	
 		input[type=text], select {
 		  width: 100%;
 		  padding: 12px 20px;
@@ -53,7 +77,7 @@
 		  background-color: #f2f2f2;
 		  padding: 20px;
 		}
-	{/literal}
+	
 	</style>
 
 	<!--Vista-->
@@ -66,10 +90,13 @@
 			<input type="submit" value="Iniciar sesion">
 		</form>
 	</div>
-	{if isset($error)} <!-- isset() retorna True si la variable esta definida. -->
-		{$error} <!-- Muestra el mensaje de error. -->
-	{/if} <!-- end etiqueta if-->
+	<?php if (isset($_smarty_tpl->tpl_vars['error']->value)) {?> <!-- isset() retorna True si la variable esta definida. -->
+		<?php echo $_smarty_tpl->tpl_vars['error']->value;?>
+ <!-- Muestra el mensaje de error. -->
+	<?php }?> <!-- end etiqueta if-->
 
 </body>
 
 </html>
+<?php }
+}
