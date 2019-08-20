@@ -11,7 +11,7 @@ class Conexion extends mysqli{
 		/*Garantizar que el envio de datos se realice con el cotejamoento UTF8.*/
 		$this->query("SET NAMES 'utf8';");
 		/*connect_errno devuelve TRUE si hay un error en la conexion*/
-		$this->connect_errno ? die('Error en la conexion') : $x = 'Conectado';
+		$this->connect_errno ? die('Error en la conexion') : $x = 'Conectado exitosamente a la Base de Datos.';
 		echo $x;
 		/*unset() elimina variable o elemento de un array u objeto, en este caso se utiliza para liberar memoria.*/
 		unset ($x);
