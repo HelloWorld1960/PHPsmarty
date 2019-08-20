@@ -67,7 +67,7 @@
 	</style>
 	<!--vista-->
 		{if isset($error)}<!-- isset() retorna True si la variable esta definida. -->
-		{$error}<!-- Muestra el mensaje de error. -->
+			{$error}<!-- Muestra el mensaje de error. -->
 		{/if}<!-- end etiqueta if-->
 <div>
 	<h1>Registro</h1>

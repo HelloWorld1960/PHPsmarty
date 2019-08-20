@@ -54,7 +54,7 @@
 		  padding: 20px;
 		}
 
-		#registro{
+		a{
 			font-size: 19px;
 			color: black;
 			/*text-decoration: none;*/
@@ -74,7 +74,7 @@
 			<label>User: </label><input type="text" name="user" /><br /><br />
 			<label>Pass: </label><input type="password" name="pass" /><br /><br />
 			<input type="hidden" name="login" value="1">
-			<a id="registro" href="index.php?modo=registro">Registrarme</a><br /><br />
+			<a href="index.php?modo=registro">Registrarme</a><br /><br />
 			<input type="submit" value="Iniciar sesion"><br /><br />
 		</form>
 	</div>
