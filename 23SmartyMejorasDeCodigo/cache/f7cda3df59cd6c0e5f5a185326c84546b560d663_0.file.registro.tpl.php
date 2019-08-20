@@ -1,10 +1,34 @@
+<?php
+/* Smarty version 3.1.30, created on 2019-08-20 23:48:57
+  from "C:\Users\Jorge01\WebPrograms\PHP[Smarty]\23SmartyMejorasDeCodigo\estilos\templates\public\registro.tpl" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5d5c6ac9dc65e1_29526190',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'f7cda3df59cd6c0e5f5a185326c84546b560d663' => 
+    array (
+      0 => 'C:\\Users\\Jorge01\\WebPrograms\\PHP[Smarty]\\23SmartyMejorasDeCodigo\\estilos\\templates\\public\\registro.tpl',
+      1 => 1566337736,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5d5c6ac9dc65e1_29526190 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <html>
 <head>
 	<title>Registro</title>
 </head>
 <body>
 	<style type="text/css">
-	{literal}
+	
 		input[type=text], select {
 		  width: 100%;
 		  padding: 12px 20px;
@@ -61,13 +85,14 @@
 		  background-color: #f2f2f2;
 		  padding: 20px;
 		}
-	{/literal}
+	
 	</style>
 
 	<!--vista-->
-	{if isset($error)} <!-- isset() retorna True si la variable esta definida. -->
-		{$error} <!-- Muestra el mensaje de error. -->
-	{/if} <!-- end etiqueta if-->
+	<?php if (isset($_smarty_tpl->tpl_vars['error']->value)) {?> <!-- isset() retorna True si la variable esta definida. -->
+		<?php echo $_smarty_tpl->tpl_vars['error']->value;?>
+ <!-- Muestra el mensaje de error. -->
+	<?php }?> <!-- end etiqueta if-->
 	<div>
 		<h1>Registro</h1>
 		<form action="index.php?modo=registro" method="POST">
@@ -81,3 +106,5 @@
 
 </body>
 </html>
+<?php }
+}
