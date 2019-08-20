@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-08-20 22:02:25
+/* Smarty version 3.1.30, created on 2019-08-20 22:54:12
   from "C:\Users\Jorge01\WebPrograms\PHP[Smarty]\20SmartyLogin\estilos\templates\public\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d5c51d183ca02_31952121',
+  'unifunc' => 'content_5d5c5df45cebb3_70594215',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd860376cf87fef4162f109833be1cf460f9f521a' => 
     array (
       0 => 'C:\\Users\\Jorge01\\WebPrograms\\PHP[Smarty]\\20SmartyLogin\\estilos\\templates\\public\\index.tpl',
-      1 => 1566331343,
+      1 => 1566334446,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d5c51d183ca02_31952121 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d5c5df45cebb3_70594215 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 
@@ -81,6 +81,10 @@ function content_5d5c51d183ca02_31952121 (Smarty_Internal_Template $_smarty_tpl)
 	</style>
 
 	<!--Vista-->
+	<?php if (isset($_smarty_tpl->tpl_vars['error']->value)) {?> <!-- isset() retorna True si la variable esta definida. -->
+		<?php echo $_smarty_tpl->tpl_vars['error']->value;?>
+ <!-- Muestra el mensaje de error. -->
+	<?php }?> <!-- end etiqueta if-->
 	<div>
 	<h1>Login</h1>
 		<form action="index.php?modo=login" method="POST">
@@ -90,11 +94,6 @@ function content_5d5c51d183ca02_31952121 (Smarty_Internal_Template $_smarty_tpl)
 			<input type="submit" value="Iniciar sesion">
 		</form>
 	</div>
-	<?php if (isset($_smarty_tpl->tpl_vars['error']->value)) {?> <!-- isset() retorna True si la variable esta definida. -->
-		<?php echo $_smarty_tpl->tpl_vars['error']->value;?>
- <!-- Muestra el mensaje de error. -->
-	<?php }?> <!-- end etiqueta if-->
-
 </body>
 
 </html>

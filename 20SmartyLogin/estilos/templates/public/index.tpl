@@ -57,6 +57,9 @@
 	</style>
 
 	<!--Vista-->
+	{if isset($error)} <!-- isset() retorna True si la variable esta definida. -->
+		{$error} <!-- Muestra el mensaje de error. -->
+	{/if} <!-- end etiqueta if-->
 	<div>
 	<h1>Login</h1>
 		<form action="index.php?modo=login" method="POST">
@@ -66,10 +69,6 @@
 			<input type="submit" value="Iniciar sesion">
 		</form>
 	</div>
-	{if isset($error)} <!-- isset() retorna True si la variable esta definida. -->
-		{$error} <!-- Muestra el mensaje de error. -->
-	{/if} <!-- end etiqueta if-->
-
 </body>
 
 </html>
