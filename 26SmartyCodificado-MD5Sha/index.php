@@ -5,7 +5,6 @@ require('includes/class.Conexion.php');
 
 /*isset() retorna True si la variable esta definida. */
 $modo = isset($_GET['modo']) ? $_GET['modo'] : 'default';
-
 switch($modo){
 	case 'login':
 		/*isset() retorna true si la variable esta definida.*/
@@ -123,7 +122,7 @@ switch($modo){
 			/*instancia de la vista*/
 			/*assign() Pasa valores para el template, en este caso es un arreglo asosiativo.*/
 			/*display() Despliega el Template.*/
-			$template=new Proyecto();
+			$template = new Proyecto();
 			$template->assign(array(
 				'error'=>'Muy bien, hemos enviado una nueva contraseña'
 			));
