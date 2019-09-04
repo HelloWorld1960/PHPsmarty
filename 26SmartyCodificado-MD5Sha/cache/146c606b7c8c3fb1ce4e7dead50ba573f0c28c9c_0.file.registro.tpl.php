@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-09-04 03:41:38
+/* Smarty version 3.1.30, created on 2019-09-04 03:47:00
   from "C:\Users\Jorge01\WebPrograms\PHP[Smarty]\26SmartyCodificado-MD5Sha\estilos\templates\public\registro.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d6f1652977e48_95345527',
+  'unifunc' => 'content_5d6f1794e178f8_25295065',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '146c606b7c8c3fb1ce4e7dead50ba573f0c28c9c' => 
     array (
       0 => 'C:\\Users\\Jorge01\\WebPrograms\\PHP[Smarty]\\26SmartyCodificado-MD5Sha\\estilos\\templates\\public\\registro.tpl',
-      1 => 1506812128,
+      1 => 1567561610,
       2 => 'file',
     ),
   ),
@@ -20,26 +20,90 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d6f1652977e48_95345527 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d6f1794e178f8_25295065 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 <head>
 	<title>Proyecto</title>
 </head>
 <body>
-<h1>Registro</h1>
+	<style type="text/css">
+	
+		input[type=text], select {
+		  width: 100%;
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		}
 
-	<?php if (isset($_smarty_tpl->tpl_vars['error']->value)) {?>
+		input[type=email], select {
+		  width: 100%;
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		}
+
+		input[type=password], select {
+		  width: 100%;
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		}
+
+		input[type=submit] {
+		  width: 100%;
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 14px 20px;
+		  margin: 8px 0;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+			font-size: 18px;
+		}
+
+		input[type=submit]:hover {
+		  background-color: #45a049;
+		}
+
+		body{
+		}
+
+		div {
+			margin: auto;
+		  width: 30%;
+		  border-radius: 5px;
+		  background-color: #f2f2f2;
+		  padding: 20px;
+		}
+	
+	</style>
+
+	<!--vista-->
+	<?php if (isset($_smarty_tpl->tpl_vars['error']->value)) {?> <!-- isset() retorna True si la variable esta definida. -->
 		<?php echo $_smarty_tpl->tpl_vars['error']->value;?>
-
-	<?php }?>
-	<form action="index.php?modo=registro" method="POST">
-		<label>User: </label><input type="text" name="user"/><br/><br/>
-		<label>Email: </label><input type="email" name="email"/><br/><br/>
-		<label>Pass: </label><input type="password" name="pass"/><br/><br/>
-		<input type="hidden" name="registro" value="1">
-		<input type="submit" value="Registrarme"><br/><br/>
-	</form>
+ <!-- Muestra el mensaje de error. -->
+	<?php }?> <!-- end etiqueta if-->
+	<div>
+		<h1>Registro</h1>
+		<form action="index.php?modo=registro" method="POST">
+			<label>User: </label><input type="text" name="user"/><br/><br/>
+			<label>Email: </label><input type="email" name="email"/><br/><br/>
+			<label>Pass: </label><input type="password" name="pass"/><br/><br/>
+			<input type="hidden" name="registro" value="1">
+			<input type="submit" value="Registrarme"><br/><br/>
+		</form>
+	</div>
 </body>
-</html><?php }
+</html>
+<?php }
 }
